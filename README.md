@@ -52,6 +52,12 @@ The AI companion is a separate prototype accessible through the main website. It
 | Generative AI | PartyRock's AI application capabilities |
 | Source control | GitHub |
 
+## 🤖 AI-Assisted Development
+
+ChatGPT was used as a coding assistance tool during development to help generate and refine code, troubleshoot implementation issues, and improve the website. The team used AI assistance as part of the development workflow alongside manual implementation and testing.
+
+AWS PartyRock was used separately to build the HeatWater AI companion for scenario-based risk explanations and intervention suggestions.
+
 ## 🏗️ Architecture
 
 The project currently consists of two separate components:

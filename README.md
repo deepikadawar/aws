@@ -1,41 +1,76 @@
-# HeatWater — Vulnerability Intelligence
+# HeatWater — Heat & Water Vulnerability Intelligence
 
-Responsive multi-page static website prototype.
+**Turning climate-risk indicators into actionable planning priorities.**
 
-## Pages
-- `index.html` — landing page and project overview
-- `dashboard.html` — clickable zone explorer, score indicators, searchable comparison table
-- `planner.html` — adjustable station budget, ranked shortlist and CSV export
-- `methodology.html` — formulas, proposed data pipeline and limitations
-- `styles.css` — responsive visual system
-- `app.js` — demo data and interactions
+HeatWater is a climate-resilience decision-support prototype designed to help planners explore areas where extreme heat and limited water access may overlap. It combines a web-based vulnerability dashboard and resource-planning interface with an AI companion built using AWS PartyRock.
 
-## Run locally
-Open `index.html` in a browser. No package installation or API key is required.
+## 🚀 Project Links
 
-## Publish with GitHub Pages
-Upload all files to the repository root. Then open Settings → Pages, choose Deploy from a branch, select `main` and `/(root)`, and save.
+- **Live Website:** https://deepikadawar.github.io/aws/
+- **AI Companion — AWS PartyRock:** https://partyrock.aws/u/deepika68/bjuSpLj20/HeatWater-Risk-Explainer-for-Planners
+- **GitHub Repository:** https://github.com/deepikadawar/aws
 
-## Important data notice
-All 12 zones and their indicator/population values are simulated examples. They are not live Delhi data, official classifications, validated coefficients, or emergency warnings. The grid is conceptual, not geographically accurate. The planner is a simple ranking heuristic, not an optimized facility-location algorithm. Replace demo data with verified, licensed, timestamped data and validate the method with experts and communities before real-world use.
+## 🌍 Problem Statement
 
-GitHub Pages hosts the static website but does not itself satisfy a separate requirement to use an AWS open-source tool. Do not claim AWS deployment or live data unless actually implemented and tested.
-## 🚀 Try HeatWater
+Extreme heat and limited access to drinking water can create overlapping risks for outdoor workers and vulnerable communities. Planners may need to consider several factors simultaneously while deciding where to prioritize limited resources.
 
-**HeatWater** helps planners explore combined heat and water-access risks and consider potential interventions for vulnerable communities.
+HeatWater explores how a simple digital platform can help users investigate these risks, compare illustrative vulnerability indicators, and consider potential interventions.
 
-- **🌐 Live Website:** [Open HeatWater Dashboard](https://deepikadawar.github.io/aws/)
-- **🤖 AI Risk Explainer (AWS PartyRock):** [Try the HeatWater Risk Explainer](https://partyrock.aws/u/deepika68/bjuSpLj20/HeatWater-Risk-Explainer-for-Planners)
-- **💻 Source Code:** [View the GitHub Repository](https://github.com/deepikadawar/aws)
+## 💡 Our Solution
 
-### How to Explore
-1. Open the live website to explore the dashboard, planner, and methodology.
-2. Open the AI Risk Explainer to generate potential interventions using illustrative heat, water-access, and worker-exposure inputs.
+HeatWater provides a unified entry point to climate-risk exploration and AI-assisted scenario analysis.
 
-**Note:** The website and PartyRock app are separate prototypes. The displayed environmental data is illustrative and should not be interpreted as verified live measurements.
+### 1. Vulnerability Dashboard
+- Explore illustrative heat and water vulnerability indicators.
+- Compare sample zones and identify areas flagged for further attention.
+- Present risk information through a visual dashboard.
 
-## AI Risk Explainer — AWS PartyRock
+### 2. Resource Planner
+- Explore how limited resources could be allocated across priority zones.
+- Consider potential interventions, including drinking-water stations.
+- Support preliminary planning through scenario exploration.
 
-Try the companion AI prototype that explains combined heat, water-access, and outdoor-worker risks and suggests potential interventions.
+### 3. Methodology and Transparency
+- Explain the project's approach and assumptions.
+- Make the limitations of the prototype clear.
+- Distinguish illustrative demonstration data from verified environmental measurements.
 
-[Open HeatWater Risk Explainer](https://partyrock.aws/u/deepika68/bjuSpLj20/HeatWater-Risk-Explainer-for-Planners)
+### 4. HeatWater AI — AWS PartyRock
+- Explore user-provided heat-risk, water-access, and outdoor-worker-exposure scenarios.
+- Generate AI-based explanations of potential risks.
+- Suggest possible interventions, such as water access points, rest breaks, and safer outdoor work schedules.
+
+The AI companion is a separate prototype accessible through the main website. It is not yet connected to the website through a shared backend.
+
+## 🛠️ Technology Stack
+
+| Component | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Website hosting | GitHub Pages |
+| AI companion | AWS PartyRock |
+| Generative AI | PartyRock's AI application capabilities |
+| Source control | GitHub |
+
+## 🏗️ Architecture
+
+The project currently consists of two separate components:
+
+**Component A — Web Platform**
+- Static website built with HTML, CSS, and JavaScript.
+- Hosted on GitHub Pages.
+- Provides the dashboard, planning interface, and methodology information.
+
+**Component B — AI Companion**
+- Built using AWS PartyRock.
+- Accepts user-provided scenario information.
+- Generates potential risk explanations and intervention suggestions.
+- Accessible through a link on the main website.
+
+The two components currently operate independently. The website does not send its dashboard data directly to the AI companion.
+
+## ☁️ How We Used AWS
+
+We used **AWS PartyRock** to create *HeatWater Risk Explainer for Planners*, an AI companion that helps users explore heat-and-water vulnerability scenarios.
+
+PartyRock allowed us to prototype a generative AI experience without building and managing a separate AI-serving backend. We refined the interaction around user-provided scenario inputs and AI-generated
